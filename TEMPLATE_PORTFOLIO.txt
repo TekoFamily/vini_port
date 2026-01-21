@@ -1,0 +1,62 @@
+============================================================
+GUIA DE TEMPLATE: COMO CUSTOMIZAR ESTE PORTFÓLIO
+============================================================
+
+Este documento explica como você pode usar este código como um template para o seu próprio portfólio, mudando apenas os textos e imagens necessários.
+
+---
+1. INFORMAÇÕES PESSOAIS (Nome e Bio)
+---
+- Arquivo: src/components/Hero.jsx
+  Onde mudar: Altere o <h1> para o seu nome e o <p> para a sua profissão/especialidade.
+
+- Arquivo: src/components/About.jsx
+  Onde mudar: Altere o texto da variável "Sobre" para contar a sua história e experiência.
+
+---
+2. HABILIDADES (Skills)
+---
+- Arquivo: src/components/Skills.jsx
+  Onde mudar: Localize a variável "const skills = [...]".
+  - Altere o 'title' e 'description' de cada item.
+  - Se quiser mudar o ícone, importe novos ícones do 'lucide-react'.
+
+- Arquivo: src/components/SkillLists.jsx
+  Onde mudar: Altere as listas de "Design", "Development" e "Tools" para as suas competências técnicas.
+
+---
+3. PROJETOS (Trabalhos/Works)
+---
+- Arquivo: src/components/Works.jsx
+  Onde mudar: Localize a variável "const works = [...]".
+  - Substitua os nomes dos projetos (title), categorias e os caminhos das imagens (image).
+  - AS IMAGENS devem ser colocadas dentro da pasta "public/".
+
+---
+4. CONTATO E LINKS
+---
+- Arquivo: src/components/Contact.jsx
+  Onde mudar: Altere o endereço de e-mail e os links das redes sociais (LinkedIn, GitHub, Instagram, etc.).
+
+- Arquivo: src/components/Footer.jsx
+  Onde mudar: Atualize o nome no copyright.
+
+---
+5. IMAGENS E ATIVOS
+---
+- Coloque todas as suas fotos de projetos e fotos de perfil dentro da pasta "public/".
+- No código, você fará referência a elas começando com "/", exemplo: image: "/meu-projeto.jpg".
+
+---
+6. CONFIGURAÇÕES TÉCNICAS (Opcional)
+---
+- Arquivo: index.html
+  Onde mudar: Altere a tag <title> para o seu nome.
+
+- Arquivo: src/index.css
+  Onde mudar: Se quiser mudar as cores globais, altere as variáveis de cores no topo do arquivo.
+
+============================================================
+DICA: Para ver as mudanças em tempo real, mantenha o comando 
+"npm run dev" rodando no terminal!
+============================================================
