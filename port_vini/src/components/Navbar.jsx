@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../context/translations';
+import { Languages } from 'lucide-react';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const { language, toggleLanguage } = useLanguage();
+    const t = translations[language].nav;
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -44,12 +49,18 @@ const Navbar = () => {
                     </svg>
                     <span className="logo-text">Vini</span>
                 </Link>
-                <ul className="nav-links">
-                    <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')}>SOBRE</a></li>
-                    <li><a href="#works" onClick={(e) => handleNavClick(e, 'works')}>PROJETOS</a></li>
-                    <li><a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>SKILLS</a></li>
-                    <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>CONTATO</a></li>
-                </ul>
+                <div className="nav-right">
+                    <ul className="nav-links">
+                        <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')}>{t.about}</a></li>
+                        <li><a href="#works" onClick={(e) => handleNavClick(e, 'works')}>{t.projects}</a></li>
+                        <li><a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>{t.skills}</a></li>
+                        <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>{t.contact}</a></li>
+                    </ul>
+                    <button onClick={toggleLanguage} className="lang-toggle" title="Switch Language">
+                        <Languages size={20} />
+                        <span>{language === 'pt' ? 'EN' : 'PT'}</span>
+                    </button>
+                </div>
             </div>
         </nav>
     );

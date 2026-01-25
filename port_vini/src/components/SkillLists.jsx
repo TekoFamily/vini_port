@@ -1,20 +1,10 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../context/translations';
 
 const SkillLists = () => {
-    const categories = [
-        {
-            title: "DATABASES",
-            skills: ["SQL Server (T-SQL)", "PostgreSQL", "MySQL / MariaDB", "MongoDB", "Redis (Caching)"]
-        },
-        {
-            title: "DEVELOPMENT",
-            skills: ["JavaScript / TypeScript", "Node.js (Express)", "React.js", "C# / .NET", "Python (Scripts)"]
-        },
-        {
-            title: "OPERATIONS",
-            skills: ["Docker / Containers", "Query Optimization", "Database Mirroring", "Backup Strategies", "CI/CD Pipelines"]
-        }
-    ];
+    const { language } = useLanguage();
+    const categories = translations[language].skillLists;
 
     return (
         <section className="skill-lists">

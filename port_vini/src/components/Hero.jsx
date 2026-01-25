@@ -1,21 +1,24 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../context/translations';
 
 const Hero = () => {
+    const { language } = useLanguage();
+    const t = translations[language].hero;
+
     return (
         <section className="hero">
             <div className="container hero-container">
                 <h1 className="hero-title fade-in">
-                    BUILDING <br />
-                    <span>DATABASES</span> <br />
-                    & SOFTWARE
+                    {t.title1} <br />
+                    <span>{t.title2}</span>
                 </h1>
                 <p className="hero-description fade-in" style={{ animationDelay: '0.2s' }}>
-                    Database Administrator & Software Engineer. <br />
-                    Especialista em arquitetura de dados e desenvolvimento de sistemas robustos.
+                    {t.subtitle}
                 </p>
                 <div className="hero-scroll fade-in" style={{ animationDelay: '0.4s' }}>
                     <div className="scroll-line"></div>
-                    <span>SCROLL DOWN</span>
+                    <span>{language === 'pt' ? 'ROLANDO PARA BAIXO' : 'SCROLL DOWN'}</span>
                 </div>
             </div>
         </section>

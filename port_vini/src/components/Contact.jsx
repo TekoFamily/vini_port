@@ -1,13 +1,18 @@
 import React from 'react';
 import { Mail, Linkedin, Github, Instagram } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../context/translations';
 
 const Contact = () => {
+    const { language } = useLanguage();
+    const t = translations[language].contact;
+
     return (
         <section id="contact" className="contact">
             <div className="container">
                 <div className="contact-wrapper">
                     <div className="contact-info">
-                        <h2 className="section-title">LET'S WORK <br />TOGETHER</h2>
+                        <h2 className="section-title">{t.title}</h2>
                         <p className="contact-email">hello@viniporthub.com</p>
                         <div className="social-links">
                             <a href="#"><Linkedin size={24} /></a>
@@ -17,18 +22,18 @@ const Contact = () => {
                     </div>
                     <form className="contact-form">
                         <div className="form-group">
-                            <label>NAME</label>
-                            <input type="text" placeholder="John Doe" />
+                            <label>{t.name}</label>
+                            <input type="text" placeholder={language === 'pt' ? "Seu nome" : "Your name"} />
                         </div>
                         <div className="form-group">
-                            <label>EMAIL</label>
-                            <input type="email" placeholder="john@example.com" />
+                            <label>{t.email}</label>
+                            <input type="email" placeholder={language === 'pt' ? "seu@email.com" : "your@email.com"} />
                         </div>
                         <div className="form-group">
-                            <label>MESSAGE</label>
-                            <textarea placeholder="Tell me about your project..."></textarea>
+                            <label>{t.message}</label>
+                            <textarea placeholder={language === 'pt' ? "Fale sobre seu projeto..." : "Tell me about your project..."}></textarea>
                         </div>
-                        <button type="submit" className="submit-btn">SEND MESSAGE</button>
+                        <button type="submit" className="submit-btn">{t.send}</button>
                     </form>
                 </div>
             </div>
