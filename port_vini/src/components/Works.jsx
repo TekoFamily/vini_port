@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 
 const works = [
-    { id: 1, title: "Query Performance Tuning", category: "DBA / OPTIMIZATION", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2000&auto=format&fit=crop" },
+    { id: 1, title: "Query Performance Tuning", category: "DBA / OPTIMIZATION", image: "/Gemini_Generated_Image_tx135ptx135ptx13.png" },
     { id: 2, title: "Scalable Microservices", category: "BACKEND DEV", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" },
     { id: 3, title: "Financial DB Migration", category: "DBA / MIGRATION", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
     { id: 4, title: "Real-time Monitoring Tool", category: "FULL STACK", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop" },
