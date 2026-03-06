@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Github, Instagram } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 
@@ -13,11 +13,10 @@ const Contact = () => {
                 <div className="contact-wrapper">
                     <div className="contact-info">
                         <h2 className="section-title">{t.title}</h2>
-                        <p className="contact-email">hello@viniporthub.com</p>
+                        <p className="contact-email">vviniciuslourenco@gmail.com</p>
                         <div className="social-links">
-                            <a href="#"><Linkedin size={24} /></a>
-                            <a href="#"><Github size={24} /></a>
-                            <a href="#"><Instagram size={24} /></a>
+                            <a href="https://www.linkedin.com/in/jose-vinicius-louren%C3%A7o-1a6b9014a/" target="_blank" rel="noopener noreferrer"><Linkedin size={24} /></a>
+                            <a href="https://github.com/ViniScooper" target="_blank" rel="noopener noreferrer"><Github size={24} /></a>
                         </div>
                     </div>
                     <form className="contact-form">

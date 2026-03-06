@@ -22,8 +22,9 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>© 2026 VINI PORT. {t.rights.toUpperCase()}</p>
                     <div className="footer-btm-links">
-                        <a href="#">{language === 'pt' ? 'POLÍTICA DE PRIVACIDADE' : 'PRIVACY POLICY'}</a>
-                        <a href="#">{language === 'pt' ? 'TERMOS DE SERVIÇO' : 'TERMS OF SERVICE'}</a>
+                        <a href="#contact">{language === 'pt' ? 'CONTATO' : 'CONTACT'}</a>
+                        <span>•</span>
+                        <a href="#works">{language === 'pt' ? 'PROJETOS' : 'PROJECTS'}</a>
                     </div>
                 </div>
             </div>
