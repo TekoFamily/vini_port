@@ -9,14 +9,21 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="container hero-container">
-                <h1 className="hero-title fade-in">
-                    {t.title1} <br />
-                    <span>{t.title2}</span>
-                </h1>
-                <p className="hero-description fade-in" style={{ animationDelay: '0.2s' }}>
-                    {t.subtitle}
-                </p>
-                <div className="hero-scroll fade-in" style={{ animationDelay: '0.4s' }}>
+                <div className="hero-content">
+                    <h1 className="hero-title fade-in">
+                        {t.title1} <br />
+                        <span>{t.title2}</span>
+                    </h1>
+                    <p className="hero-description fade-in" style={{ animationDelay: '0.2s' }}>
+                        {t.subtitle}
+                    </p>
+                    {t.remote && (
+                        <p className="hero-remote fade-in" style={{ animationDelay: '0.4s' }}>
+                            {t.remote}
+                        </p>
+                    )}
+                </div>
+                <div className="hero-scroll fade-in" style={{ animationDelay: '0.8s' }}>
                     <div className="scroll-line"></div>
                     <span>{language === 'pt' ? 'ROLANDO PARA BAIXO' : 'SCROLL DOWN'}</span>
                 </div>

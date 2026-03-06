@@ -4,13 +4,13 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 
 const works = [
-    { id: 1, title: "Query Performance Tuning", category: "DBA / OPTIMIZATION", image: "/Gemini_Generated_Image_tx135ptx135ptx13.png" },
-    { id: 2, title: "Scalable Microservices", category: "BACKEND DEV", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" },
-    { id: 3, title: "Financial DB Migration", category: "DBA / MIGRATION", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
-    { id: 4, title: "Real-time Monitoring Tool", category: "FULL STACK", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop" },
-    { id: 5, title: "Monitor de Relatórios - Livros & Vendas", category: "BACKEND / DATABASE", image: "/monitor_relatorios.png" },
-    { id: 6, title: "ByteDataEngine", category: "BACKEND / DEVOPS", image: "/bytedata_dashboard.png" },
-    { id: 7, title: "PDV de Vendas & Estoque", category: "FULL STACK / OCI", image: "/pdv.png" },
+    { id: 1, title: "Query Performance Lab", category: "DBA / ORACLE", image: "/Gemini_Generated_Image_tx135ptx135ptx13.png" },
+    { id: 2, title: "Scalable Microservices", category: "BACKEND / DATABASE", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" },
+    { id: 3, title: "Financial DB Migration", category: "DATABASE ENGINEER", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
+    { id: 4, title: "Database Monitoring Tool", category: "DBA / AUTOMATION", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop" },
+    { id: 5, title: "Oracle PL-SQL Report Monitor", category: "BACKEND / ORACLE PL-SQL", image: "/monitor_relatorios.png" },
+    { id: 6, title: "ByteDataEngine Lakehouse", category: "DATA ENGINEERING / OCI", image: "/bytedata_dashboard.png" },
+    { id: 7, title: "PDV & Inventory Control", category: "FULL STACK / DATABASE", image: "/pdv.png" },
 ];
 
 const Works = () => {

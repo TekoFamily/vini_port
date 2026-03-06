@@ -7,42 +7,43 @@ export const translations = {
             contact: "CONTATO"
         },
         hero: {
-            title1: "DATABASE, DEV &",
-            title2: "DEVOPS",
-            subtitle: "Especialista em SQL Server, Desenvolvimento Backend e DevOps, focado em alta disponibilidade na Oracle Cloud (OCI)."
+            title1: "DATABASE ENGINEER |",
+            title2: "PL/SQL | CLOUD & DEVOPS",
+            subtitle: "Database Engineer especializado em Oracle PL/SQL, performance tuning e arquitetura de dados em Oracle Cloud Infrastructure (OCI). Experiência com PostgreSQL, MySQL, MongoDB, Docker e automação de infraestrutura.",
+            remote: "Disponível para oportunidades remotas globais"
         },
         about: {
-            title: "ESTRATEGISTA DE DADOS & DEVOPS",
-            description: "Especialista em transformar dados em performance e infraestrutura em código. Com foco em ambientes de missão crítica na Oracle Cloud Infrastructure (OCI), garanto que sua aplicação seja sólida, rápida e escalável utilizando containers e CI/CD.",
+            title: "ESTRATEGISTA DE DADOS & CLOUD ENGINEER",
+            description: "Especialista em bancos de dados e otimização de performance, com forte experiência em Oracle PL/SQL, SQL Server, PostgreSQL e MySQL. Trabalho com ambientes críticos na Oracle Cloud Infrastructure (OCI) garantindo alta disponibilidade, performance e escalabilidade através de Docker, automação e CI/CD. Minha atuação combina engenharia de dados, backend e DevOps para construir sistemas resilientes e eficientes. Aberto a projetos e desafios internacionais.",
             stats: [
-                { label: "ANOS DE EXPERIÊNCIA", value: "4+" },
+                { label: "ANOS COM TECNOLOGIA & DADOS", value: "4+" },
                 { label: "BANCOS OTIMIZADOS", value: "50+" },
-                { label: "DISPONIBILIDADE", value: "99.9%" }
+                { label: "DISPONIBILIDADE EM PROD", value: "99.9%" }
             ]
         },
         skillLists: [
             {
-                title: "BANCOS DE DADOS",
-                skills: ["SQL Server (T-SQL)", "PostgreSQL / Prisma", "MySQL / Supabase", "Indexação & Performance", "Normalização Avançada"]
+                title: "DATABASE STACK",
+                skills: ["Oracle Database / PL-SQL", "SQL Server (T-SQL)", "PostgreSQL", "MySQL", "MongoDB"]
             },
             {
-                title: "DESENVOLVIMENTO",
-                skills: ["Node.js (NestJS/Express)", "React.js / Next.js", "TypeScript / C#", "Git / SVN (Híbrido)", "JWT / RBAC Security"]
+                title: "DATABASE SPECIALTIES",
+                skills: ["Query Performance Tuning", "Indexing Strategies", "Data Modeling", "Stored Procedures & Functions", "High Availability"]
             },
             {
                 title: "DEVOPS & CLOUD",
-                skills: ["Oracle Cloud (OCI)", "Docker / Docker Compose", "Nginx Proxy Reverso", "Shell Scripting", "CI/CD & PM2 Uptime"]
+                skills: ["Oracle Cloud Infrastructure (OCI)", "Docker / Docker Compose", "CI/CD & Automation", "Shell Scripting", "Nginx / Linux Admin"]
             }
         ],
         skills: {
-            title: "HABILIDADES",
+            title: "HABILIDADES & EXPERTISE",
             cards: [
-                { title: "Resiliência Cloud", desc: "Gestão de infraestrutura na Oracle Cloud com foco em uptime e disponibilidade." },
-                { title: "Arquitetura Segura", desc: "Implementação de autenticação robusta com JWT, Guards e controle RBAC." },
-                { title: "Performance Tuning", desc: "Otimização de índices e queries complexas para bancos de alta volumetria." },
-                { title: "Orquestração", desc: "Gestão de microsserviços com Docker Compose e Proxy Reverso Nginx." },
-                { title: "ALM Híbrido", desc: "Domínio de Git (GitFlow) e SVN para gestão de entregas em ambientes diversos." },
-                { title: "Automação", desc: "Shell Scripting para backups, deploys e tarefas administrativas críticas." }
+                { title: "Bancos de Missão Crítica", desc: "Administração de bases em produção e homologação, garantindo integridade e disponibilidade extrema." },
+                { title: "Performance Tuning", desc: "Otimização de queries complexas, redução de tempo de execução (Ex: 12s para 300ms) e reestruturação de índices." },
+                { title: "Arquitetura de Dados", desc: "Modelagem relacional avançada, normalização e otimização de schemas para alta volumetria." },
+                { title: "Resiliência OCI", desc: "Gestão de infraestrutura na Oracle Cloud focada em disponibilidade, escalabilidade e performance." },
+                { title: "Automação & CI/CD", desc: "Shell Scripting e pipelines para backups, deploys e tarefas administrativas críticas em ambientes híbridos." },
+                { title: "Backend & Integração", desc: "Desenvolvimento de APIs robustas integradas a bancos de alto desempenho e microsserviços Docker." }
             ]
         },
         works: {
@@ -76,42 +77,43 @@ export const translations = {
             contact: "CONTACT"
         },
         hero: {
-            title1: "DATABASE, DEV &",
-            title2: "DEVOPS",
-            subtitle: "SQL Server Specialist, Backend Developer, and DevOps Engineer, focused on high availability on Oracle Cloud (OCI)."
+            title1: "DATABASE ENGINEER |",
+            title2: "PL/SQL | CLOUD & DEVOPS",
+            subtitle: "Database Engineer specialized in Oracle PL/SQL, performance tuning, and data architecture in Oracle Cloud Infrastructure (OCI). Experienced with PostgreSQL, MySQL, MongoDB, Docker, and infrastructure automation.",
+            remote: "Open to international and remote global opportunities"
         },
         about: {
-            title: "DATA STRATEGIST & DEVOPS",
-            description: "Specialist in transforming data into performance and infrastructure into code. Focusing on mission-critical environments in Oracle Cloud Infrastructure (OCI), I ensure your application is solid, fast, and scalable using containers and CI/CD.",
+            title: "DATA STRATEGIST & CLOUD ENGINEER",
+            description: "Expert in databases and performance optimization, with strong experience in Oracle PL/SQL, SQL Server, PostgreSQL, and MySQL. I work with critical environments in Oracle Cloud Infrastructure (OCI) ensuring high availability, performance, and scalability through Docker, automation, and CI/CD. My work combines data engineering, backend, and DevOps to build resilient and efficient systems.",
             stats: [
-                { label: "YEARS OF EXPERIENCE", value: "4+" },
+                { label: "YEARS WITH TECH & DATA", value: "4+" },
                 { label: "OPTIMIZED DATABASES", value: "50+" },
-                { label: "AVAILABILITY", value: "99.9%" }
+                { label: "UPTIME IN PROD", value: "99.9%" }
             ]
         },
         skillLists: [
             {
-                title: "DATABASES",
-                skills: ["SQL Server (T-SQL)", "PostgreSQL / Prisma", "MySQL / Supabase", "Indexing & Performance", "Advanced Normalization"]
+                title: "DATABASE STACK",
+                skills: ["Oracle Database / PL-SQL", "SQL Server (T-SQL)", "PostgreSQL", "MySQL", "MongoDB"]
             },
             {
-                title: "DEVELOPMENT",
-                skills: ["Node.js (NestJS/Express)", "React.js / Next.js", "TypeScript / C#", "Git / SVN (Hybrid)", "JWT / RBAC Security"]
+                title: "DATABASE SPECIALTIES",
+                skills: ["Query Performance Tuning", "Indexing Strategies", "Data Modeling", "Stored Procedures & Functions", "High Availability"]
             },
             {
                 title: "DEVOPS & CLOUD",
-                skills: ["Oracle Cloud (OCI)", "Docker / Docker Compose", "Nginx Reverse Proxy", "Shell Scripting", "CI/CD & PM2 Uptime"]
+                skills: ["Oracle Cloud Infrastructure (OCI)", "Docker / Docker Compose", "CI/CD & Automation", "Shell Scripting", "Nginx / Linux Admin"]
             }
         ],
         skills: {
-            title: "SKILLS",
+            title: "SKILLS & EXPERTISE",
             cards: [
-                { title: "Cloud Resilience", desc: "Infrastructure management on Oracle Cloud focused on uptime and availability." },
-                { title: "Secure Architecture", desc: "Robust authentication implementation with JWT, Guards, and RBAC control." },
-                { title: "Performance Tuning", desc: "Indexing and complex query optimization for high-volume databases." },
-                { title: "Orchestration", desc: "Microservices management with Docker Compose and Nginx Reverse Proxy." },
-                { title: "Hybrid ALM", desc: "Mastery of Git (GitFlow) and SVN for delivery management in diverse environments." },
-                { title: "Automation", desc: "Shell Scripting for backups, deploys, and critical administrative tasks." }
+                { title: "Mission Critical Databases", desc: "Administration of production and staging environments, ensuring data integrity and extreme availability." },
+                { title: "Performance Tuning", desc: "Complex query optimization, execution time reduction (e.g., 12s to 300ms), and index restructuring." },
+                { title: "Data Architecture", desc: "Advanced relational modeling, normalization, and schema optimization for high-volume data." },
+                { title: "OCI Resilience", desc: "Infrastructure management on Oracle Cloud focused on availability, scalability, and performance." },
+                { title: "Automation & CI/CD", desc: "Shell Scripting and pipelines for backups, deploys, and critical administrative tasks in hybrid environments." },
+                { title: "Backend & Integration", desc: "Robust API development integrated with high-performance databases and Docker microservices." }
             ]
         },
         works: {
