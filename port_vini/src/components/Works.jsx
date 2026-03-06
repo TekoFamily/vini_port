@@ -9,6 +9,8 @@ const works = [
     { id: 3, title: "Financial DB Migration", category: "DBA / MIGRATION", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
     { id: 4, title: "Real-time Monitoring Tool", category: "FULL STACK", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop" },
     { id: 5, title: "Monitor de Relatórios - Livros & Vendas", category: "BACKEND / DATABASE", image: "/monitor_relatorios.png" },
+    { id: 6, title: "ByteDataEngine", category: "BACKEND / DEVOPS", image: "/bytedata_dashboard.png" },
+    { id: 7, title: "PDV de Vendas & Estoque", category: "FULL STACK / OCI", image: "/pdv.png" },
 ];
 
 const Works = () => {

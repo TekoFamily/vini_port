@@ -7,13 +7,13 @@ export const translations = {
             contact: "CONTATO"
         },
         hero: {
-            title1: "DATABASE &",
-            title2: "DEVELOPER",
-            subtitle: "Especialista em SQL Server e Desenvolvimento Backend, focado em performance extrema e escalabilidade de dados."
+            title1: "DATABASE, DEV &",
+            title2: "DEVOPS",
+            subtitle: "Especialista em SQL Server, Desenvolvimento Backend e DevOps, focado em alta disponibilidade na Oracle Cloud (OCI)."
         },
         about: {
-            title: "ESTRATEGISTA DE DADOS & DESENVOLVEDOR",
-            description: "Sou apaixonado por transformar grandes volumes de dados brutos em insights e performance. Com foco em ambientes de missão crítica, minha missão é garantir que a base tecnológica da sua empresa seja sólida, rápida e escalável.",
+            title: "ESTRATEGISTA DE DADOS & DEVOPS",
+            description: "Especialista em transformar dados em performance e infraestrutura em código. Com foco em ambientes de missão crítica na Oracle Cloud Infrastructure (OCI), garanto que sua aplicação seja sólida, rápida e escalável utilizando containers e CI/CD.",
             stats: [
                 { label: "ANOS DE EXPERIÊNCIA", value: "4+" },
                 { label: "BANCOS OTIMIZADOS", value: "50+" },
@@ -23,26 +23,26 @@ export const translations = {
         skillLists: [
             {
                 title: "BANCOS DE DADOS",
-                skills: ["SQL Server (T-SQL)", "PostgreSQL", "MySQL / MariaDB", "MongoDB", "Redis (Caching)"]
+                skills: ["SQL Server (T-SQL)", "PostgreSQL / Prisma", "MySQL / Supabase", "Indexação & Performance", "Normalização Avançada"]
             },
             {
                 title: "DESENVOLVIMENTO",
-                skills: ["JavaScript / TypeScript", "Node.js (Express)", "React.js", "C# / .NET", "Python (Scripts)"]
+                skills: ["Node.js (NestJS/Express)", "React.js / Next.js", "TypeScript / C#", "Git / SVN (Híbrido)", "JWT / RBAC Security"]
             },
             {
-                title: "OPERAÇÕES",
-                skills: ["Docker / Containers", "Otimização de Query", "Espelhamento de Banco", "Estratégias de Backup", "CI/CD Pipelines"]
+                title: "DEVOPS & CLOUD",
+                skills: ["Oracle Cloud (OCI)", "Docker / Docker Compose", "Nginx Proxy Reverso", "Shell Scripting", "CI/CD & PM2 Uptime"]
             }
         ],
         skills: {
             title: "HABILIDADES",
             cards: [
-                { title: "Admin de Banco", desc: "Gestão, backup e tuning de SQL Server, PostgreSQL e MySQL." },
-                { title: "Dev Backend", desc: "Desenvolvimento de APIs robustas com Node.js e C#." },
-                { title: "Performance Tuning", desc: "Otimização de consultas lentas e redução de latência de IO." },
-                { title: "Segurança", desc: "Implementação de políticas de acesso e segurança de dados." },
-                { title: "Modelagem", desc: "Arquitetura e modelagem relacional e não-relacional." },
-                { title: "Automação", desc: "Scripts para automação de tarefas e rotinas de banco." }
+                { title: "Resiliência Cloud", desc: "Gestão de infraestrutura na Oracle Cloud com foco em uptime e disponibilidade." },
+                { title: "Arquitetura Segura", desc: "Implementação de autenticação robusta com JWT, Guards e controle RBAC." },
+                { title: "Performance Tuning", desc: "Otimização de índices e queries complexas para bancos de alta volumetria." },
+                { title: "Orquestração", desc: "Gestão de microsserviços com Docker Compose e Proxy Reverso Nginx." },
+                { title: "ALM Híbrido", desc: "Domínio de Git (GitFlow) e SVN para gestão de entregas em ambientes diversos." },
+                { title: "Automação", desc: "Shell Scripting para backups, deploys e tarefas administrativas críticas." }
             ]
         },
         works: {
@@ -76,13 +76,13 @@ export const translations = {
             contact: "CONTACT"
         },
         hero: {
-            title1: "DATABASE &",
-            title2: "DEVELOPER",
-            subtitle: "SQL Server Specialist and Backend Developer, focused on extreme performance and data scalability."
+            title1: "DATABASE, DEV &",
+            title2: "DEVOPS",
+            subtitle: "SQL Server Specialist, Backend Developer, and DevOps Engineer, focused on high availability on Oracle Cloud (OCI)."
         },
         about: {
-            title: "DATA STRATEGIST & DEVELOPER",
-            description: "I am passionate about transforming large volumes of raw data into insights and performance. Focusing on mission-critical environments, my mission is to ensure your company's technological foundation is solid, fast, and scalable.",
+            title: "DATA STRATEGIST & DEVOPS",
+            description: "Specialist in transforming data into performance and infrastructure into code. Focusing on mission-critical environments in Oracle Cloud Infrastructure (OCI), I ensure your application is solid, fast, and scalable using containers and CI/CD.",
             stats: [
                 { label: "YEARS OF EXPERIENCE", value: "4+" },
                 { label: "OPTIMIZED DATABASES", value: "50+" },
@@ -92,26 +92,26 @@ export const translations = {
         skillLists: [
             {
                 title: "DATABASES",
-                skills: ["SQL Server (T-SQL)", "PostgreSQL", "MySQL / MariaDB", "MongoDB", "Redis (Caching)"]
+                skills: ["SQL Server (T-SQL)", "PostgreSQL / Prisma", "MySQL / Supabase", "Indexing & Performance", "Advanced Normalization"]
             },
             {
                 title: "DEVELOPMENT",
-                skills: ["JavaScript / TypeScript", "Node.js (Express)", "React.js", "C# / .NET", "Python (Scripts)"]
+                skills: ["Node.js (NestJS/Express)", "React.js / Next.js", "TypeScript / C#", "Git / SVN (Hybrid)", "JWT / RBAC Security"]
             },
             {
-                title: "OPERATIONS",
-                skills: ["Docker / Containers", "Query Optimization", "Database Mirroring", "Backup Strategies", "CI/CD Pipelines"]
+                title: "DEVOPS & CLOUD",
+                skills: ["Oracle Cloud (OCI)", "Docker / Docker Compose", "Nginx Reverse Proxy", "Shell Scripting", "CI/CD & PM2 Uptime"]
             }
         ],
         skills: {
             title: "SKILLS",
             cards: [
-                { title: "DB Administration", desc: "Management, backup, and tuning of SQL Server, PostgreSQL, and MySQL." },
-                { title: "Backend Dev", desc: "Development of robust APIs with Node.js and C#." },
-                { title: "Performance Tuning", desc: "Optimization of slow queries and reduction of IO latency." },
-                { title: "Security", desc: "Implementation of access policies and data security." },
-                { title: "Modeling", desc: "Relational and non-relational architecture and modeling." },
-                { title: "Automation", desc: "Scripts for task automation and database routines." }
+                { title: "Cloud Resilience", desc: "Infrastructure management on Oracle Cloud focused on uptime and availability." },
+                { title: "Secure Architecture", desc: "Robust authentication implementation with JWT, Guards, and RBAC control." },
+                { title: "Performance Tuning", desc: "Indexing and complex query optimization for high-volume databases." },
+                { title: "Orchestration", desc: "Microservices management with Docker Compose and Nginx Reverse Proxy." },
+                { title: "Hybrid ALM", desc: "Mastery of Git (GitFlow) and SVN for delivery management in diverse environments." },
+                { title: "Automation", desc: "Shell Scripting for backups, deploys, and critical administrative tasks." }
             ]
         },
         works: {

@@ -6,7 +6,20 @@ import { translations } from '../context/translations';
 
 const projectsData = {
     pt: {
-        1: { title: "Otimização de Performance SQL", category: "DBA / OTIMIZAÇÃO", desc: "Redução de 70% na latência de consultas críticas através de análise de planos de execução, criação estratégica de índices e refatoração de T-SQL.", year: "2024", client: "Tech Solutions" },
+        1: {
+            title: "Otimização de Performance SQL",
+            category: "DBA / OTIMIZAÇÃO",
+            desc: `Redução de 70% na latência de consultas críticas através de um fluxo estruturado de engenharia de performance.
+
+🛠️ PASSO A PASSO DA OTIMIZAÇÃO:
+• Análise de Planos de Execução: Identificação de 'Index Scans' caros e 'Key Lookups' desnecessários que causavam alto I/O.
+• Engenharia de Índices: Criação estratégica de Índices Non-Clustered com colunas incluídas (INCLUDE), cobrindo 100% das consultas mais pesadas (Covering Indexes).
+• Refatoração T-SQL: Eliminação de funções escalares em cláusulas WHERE e substituição de cursores por operações baseadas em conjuntos (Set-based), permitindo o paralelismo do banco.
+• Estatísticas & Fragmentação: Implementação de rotinas de atualização de estatísticas e manutenção de índices para evitar degradação de performance a longo prazo.`,
+            year: "2024",
+            client: "Tech Solutions",
+            stack: ["SQL Server", "T-SQL", "Performance Profiler", "Execution Plans"]
+        },
         2: { title: "Microsserviços Escaláveis", category: "DESENVOLVIMENTO BACKEND", desc: "Arquitetura de microsserviços usando Node.js e Docker, integrada com PostgreSQL para alta disponibilidade e escalabilidade.", year: "2023", client: "Global Fintech" },
         3: { title: "Migração de Banco Financeiro", category: "DBA / MIGRAÇÃO", desc: "Migração complexa de banco de dados legado (On-premise) para Cloud, garantindo integridade total de dados e zero downtime.", year: "2023", client: "Sovereign Bank" },
         4: { title: "Monitoramento em Tempo Real", category: "FULL STACK", desc: "Dashboard de monitoramento em tempo real para status de servidores de banco de dados e alertas de integridade.", year: "2024", client: "DataWatch Corp" },
@@ -35,9 +48,61 @@ const projectsData = {
             stack: ["Python", "Flask", "MySQL", "Stored Procedures", "AJAX", "REST API", "Pandas"],
             link: "https://github.com/ViniScooper/monitor_relatorios"
         },
+        6: {
+            title: "ByteDataEngine - Metadata-Driven Lakehouse (V2.1)",
+            category: "DATA ENGINEERING / ARCHITECTURE",
+            desc: `Plataforma "Metadata-Driven" projetada como um Data Lakehouse simplificado para eliminar o retrabalho no desenvolvimento de BI.
+
+🎯 CONCEITO & DIFERENCIAL:
+• NoSQL sobre SQL: Utiliza funções nativas de JSON do MySQL 8 para suportar esquemas flexíveis (dados_json) dentro de um banco relacional robusto.
+• Auto-Schema UI: O frontend React identifica alterações no banco via "SHOW COLUMNS" e gera interfaces de dashboard dinamicamente, sem necessidade de novo código.
+
+🔄 PIPELINE DE DADOS:
+• SmartImporter (Ingestão): Motor com Fuzzy Matching (>80% similaridade), detecção automática de encoding e sanitização Strict (normalização de moedas/datas).
+• Universal Connectors: Consumo de qualquer URL JSON com proteção Anti-SSRF e mapeamento automático para tabelas brutas (tb_raw_*).
+• Visualização Dinâmica: Dashboards inteligentes que sugerem eixos X/Y baseados na tipagem dos dados e suporte a Time Series.
+
+🌐 ECOSSISTEMA & SAÍDA:
+• Hub de Integração: Endpoint OData v4 nativo para consumo direto no Power BI e geração de templates de importação dinâmicos.
+• Governança: Trilhas de auditoria imutáveis (audit_logs) e RBAC granular por dataset.`,
+            year: "2026",
+            client: "ByteData Inc.",
+            stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "Pandas", "Docker", "OData v4", "Fuzzy Search"],
+            link: "https://github.com/ViniScooper/bytedata-order-api"
+        },
+        7: {
+            title: "PDV - Engenharia de Software & Segurança",
+            category: "FULL STACK / OCI",
+            desc: `Sistema de Ponto de Venda focado em integridade de dados e segurança de nível empresarial.
+
+🔐 SEGURANÇA & AUTENTICAÇÃO:
+• Proteção de Dados: Estruturei a autenticação utilizando JWT e Guards no NestJS, implementando RBAC (Role-Based Access Control) para controle granular de acesso.
+• Backend Resiliente: Integração robusta com APIs externas via Axios, com tratamento de Rate Limits e Timeouts.
+
+📈 ENGENHARIA DE DADOS:
+• Modelagem Escalável: Desenhei o esquema utilizando Prisma ORM com conceitos avançados de normalização.
+• Performance de Busca: Implementação de estratégias de indexação em campos de busca frequente no PostgreSQL, otimizando queries complexas.`,
+            year: "2026",
+            client: "Pequenos Comércios",
+            stack: ["NestJS", "Prisma", "PostgreSQL", "JWT / RBAC", "React", "Docker"],
+            link: "https://github.com/ViniScooper/pdv_byte"
+        },
     },
     en: {
-        1: { title: "Query Performance Tuning", category: "DBA / OPTIMIZATION", desc: "70% reduction in critical query latency through execution plan analysis, strategic index creation, and T-SQL refactoring.", year: "2024", client: "Tech Solutions" },
+        1: {
+            title: "Query Performance Tuning",
+            category: "DBA / OPTIMIZATION",
+            desc: `70% reduction in critical query latency through a structured performance engineering workflow.
+
+🛠️ OPTIMIZATION STEP-BY-STEP:
+• Execution Plan Analysis: Identification of expensive 'Index Scans' and unnecessary 'Key Lookups' causing high I/O.
+• Index Engineering: Strategic creation of Non-Clustered Indexes with INCLUDE columns, achieving 100% coverage for heavy queries (Covering Indexes).
+• T-SQL Refactoring: Removal of scalar functions in WHERE clauses and replacement of cursors with set-based operations, enabling database parallelism.
+• Statistics & Fragmentation: Implementation of statistics update routines and index maintenance to prevent long-term performance degradation.`,
+            year: "2024",
+            client: "Tech Solutions",
+            stack: ["SQL Server", "T-SQL", "Performance Profiler", "Execution Plans"]
+        },
         2: { title: "Scalable Microservices", category: "BACKEND DEV", desc: "Microservices architecture using Node.js and Docker, integrated with PostgreSQL for high availability and scalability.", year: "2023", client: "Global Fintech" },
         3: { title: "Financial DB Migration", category: "DBA / MIGRATION", desc: "Complex legacy database migration (On-premise) to Cloud, ensuring total data integrity and zero downtime.", year: "2023", client: "Sovereign Bank" },
         4: { title: "Real-time Monitoring Tool", category: "FULL STACK", desc: "Real-time monitoring dashboard for database server status and integrity alerts.", year: "2024", client: "DataWatch Corp" },
@@ -66,15 +131,56 @@ const projectsData = {
             stack: ["Python", "Flask", "MySQL", "Stored Procedures", "AJAX", "REST API", "Pandas"],
             link: "https://github.com/ViniScooper/monitor_relatorios"
         },
+        6: {
+            title: "ByteDataEngine - Metadata-Driven Lakehouse (V2.1)",
+            category: "DATA ENGINEERING / ARCHITECTURE",
+            desc: `A "Metadata-Driven" platform designed as a simplified Data Lakehouse to eliminate rework in BI development.
+
+🎯 CONCEPT & DIFFERENTIATOR:
+• NoSQL over SQL: Leverages native MySQL 8 JSON functions to support flexible schemas (json_data) within a robust relational database.
+• Auto-Schema UI: The React frontend identifies database changes via "SHOW COLUMNS" and generates dashboard interfaces dynamically, with no new code required.
+
+🔄 DATA PIPELINE:
+• SmartImporter (Ingestion): Engine with Fuzzy Matching (>80% similarity), automatic encoding detection, and Strict sanitization (currency/date normalization).
+• Universal Connectors: Consumes any JSON URL with Anti-SSRF protection and automatic mapping to raw tables (tb_raw_*).
+• Dynamic Visualization: Intelligent dashboards that suggest X/Y axes based on data typing and Time Series support.
+
+🌐 ECOSYSTEM & OUTPUT:
+• Integration Hub: Native OData v4 endpoint for direct consumption in Power BI and dynamic import template generation.
+• Governance: Immutable audit trails (audit_logs) and granular RBAC per dataset.`,
+            year: "2026",
+            client: "ByteData Inc.",
+            stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "Pandas", "Docker", "OData v4", "Fuzzy Search"],
+            link: "https://github.com/ViniScooper/bytedata-order-api"
+        },
+        7: {
+            title: "POS - Software Engineering & Security",
+            category: "FULL STACK / OCI",
+            desc: `Point of Sale system focused on data integrity and enterprise-grade security.
+
+🔐 SECURITY & AUTHENTICATION:
+• Data Protection: Structured authentication using JWT and Guards in NestJS, implementing RBAC (Role-Based Access Control) for granular access control.
+• Resilient Backend: Robust integration with external APIs via Axios, including Rate Limit and Timeout handling.
+
+📈 DATA ENGINEERING:
+• Scalable Modeling: Designed the schema using Prisma ORM with advanced normalization concepts.
+• Search Performance: Implementation of indexing strategies on frequent search fields in PostgreSQL, optimizing complex queries.`,
+            year: "2026",
+            client: "Small Businesses",
+            stack: ["NestJS", "Prisma", "PostgreSQL", "JWT / RBAC", "React", "Docker"],
+            link: "https://github.com/ViniScooper/pdv_byte"
+        },
     }
 };
 
 const images = {
-    1: "/Gemini_Generated_Image_tx135ptx135ptx13.png",
-    2: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop",
-    3: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop",
-    4: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop",
-    5: "/monitor_relatorios.png"
+    "1": "/Gemini_Generated_Image_tx135ptx135ptx13.png",
+    "2": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop",
+    "3": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop",
+    "4": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop",
+    "5": "/monitor_relatorios.png",
+    "6": "/bytedata_dashboard.png",
+    "7": "/pdv.png"
 };
 
 const ProjectDetails = () => {
@@ -100,6 +206,12 @@ const ProjectDetails = () => {
                 <div className="project-main-image">
                     <img src={images[id]} alt={project.title} />
                 </div>
+
+                {id === '6' && (
+                    <div className="project-secondary-image" style={{ marginTop: '2rem' }}>
+                        <img src="/bytedata_login.png" alt="ByteData Login" style={{ width: '100%', borderRadius: '12px' }} />
+                    </div>
+                )}
 
                 <div className="project-info-grid">
                     <div className="project-description">
