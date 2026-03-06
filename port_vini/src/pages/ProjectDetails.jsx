@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Github, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 
@@ -23,7 +23,7 @@ const projectsData = {
         2: {
             title: "Microsserviços Escaláveis & Dados",
             category: "BACKEND / DATABASE",
-            desc: "Arquitetura de microsserviços usando Node.js e Docker, integrada com PostgreSQL. Foco em garantir a consistência eventual e alta disponibilidade dos dados em ambientes distribuídos.",
+            desc: "Arquitetura de microsserviços usando Node.js e Docker, integrada with PostgreSQL. Foco em garantir a consistência eventual e alta disponibilidade dos dados em ambientes distribuídos.",
             year: "2023",
             client: "Global Fintech",
             stack: ["Node.js", "Docker", "PostgreSQL", "Redis", "Microservices"]
@@ -53,7 +53,7 @@ const projectsData = {
             title: "Oracle PL-SQL Report Monitor",
             category: "BACKEND / ORACLE PL-SQL",
             desc: `Sistema de monitoramento robusto focado em performance extrema e integridade de dados para gestão de grandes volumes de informações (Livros, Autores e Vendas).
-
+            
 📈 PERFORMANCE & ESCALABILIDADE:
 • Paginação via Oracle/SQL: Redução drástica de memória ao carregar apenas o necessário por página (OFFSET/FETCH).
 • Ingestão Atmosférica: Utilização de Stored Procedures complexas para centralizar a lógica de importação de 80k+ registros, eliminando "round-trips" de rede.
@@ -66,12 +66,20 @@ const projectsData = {
         6: {
             title: "ByteDataEngine Lakehouse",
             category: "DATA ENGINEERING / OCI",
-            desc: `Plataforma "Metadata-Driven" projetada para centralização, automação e visualização de inteligência de negócios rodando em OCI.
+            desc: `O ByteData é um Motor de Abstração de Dados (Data Fabric) projetado para orquestração de pipelines e governança ativa em ambientes OCI.
+            
+🧠 ARQUITETURA METADATA-DRIVEN:
+• Ingestão Dinâmica: O sistema automatiza contratos de dados e rotas de ingestão lendo metadados de fontes Oracle, MySQL e APIs.
+• MySQL 8 (JSON): Uso estratégico de campos JSON para flexibilidade NoSQL com consistência SQL, permitindo evoluções de esquema sem downtime.
 
 📊 MÓDULOS & FUNCIONALIDADES:
-• Pipelines Automáticos: Orquestração de tarefas para replicação de bancos e ingestão via Robôs (Push/Pull).
-• Auditoria de Dados: Registro imutável de eventos e falhas críticas, garantindo rastreabilidade total (Audit Logs).
-• Governance: Controle de acesso granular (RBAC) e central de configurações de ambiente estruturada.`,
+• Pipelines Push/Pull: Orquestração assíncrona com Robôs de Ingestão que otimizam a captura baseada na criticidade do dado.
+• Audit Logs & Imutabilidade: Rastreabilidade total e linhagem de dados clara para conformidade (compliance).
+• Governança & RBAC: Controle granular integrado a centrais de configuração (Dev/HML/Prod).
+
+🛠️ STACK & ESTRATÉGIA:
+• OData v4: Padronização de APIs para consumo nativo em ferramentas de BI (PowerBI, Tableau).
+• OCI & Docker: Escalabilidade elástica e portabilidade total da infraestrutura.`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "OCI", "Docker", "OData v4"],
@@ -81,7 +89,7 @@ const projectsData = {
             title: "PDV & Inventory Control",
             category: "FULL STACK / DATABASE",
             desc: `Sistema de Ponto de Venda focado em integridade de dados e segurança de nível empresarial.
-
+            
 🔐 SEGURANÇA & DADOS:
 • Modelagem Escalável: Desenho de esquema utilizando Prisma ORM seguindo padrões rigorosos de normalização.
 • Performance de Busca: Estratégias de indexação em campos de busca frequente no PostgreSQL para otimizar filtros complexos.
@@ -140,7 +148,7 @@ const projectsData = {
             title: "Oracle PL-SQL Report Monitor",
             category: "BACKEND / ORACLE PL-SQL",
             desc: `Robust monitoring system focused on extreme performance and data integrity for managing large volumes of information (Books, Authors, and Sales).
-
+            
 📈 PERFORMANCE & SCALABILITY:
 • Oracle/SQL Pagination: Drastic memory reduction by loading only what is needed per page (OFFSET/FETCH).
 • Atomic Ingestion: Using complex Stored Procedures to centralize import logic for 80k+ records, eliminating network round-trips.
@@ -153,12 +161,16 @@ const projectsData = {
         6: {
             title: "ByteDataEngine Lakehouse",
             category: "DATA ENGINEERING / OCI",
-            desc: `A "Metadata-Driven" platform designed for centralization, automation, and visualization of business intelligence running on OCI.
+            desc: `ByteData is a Data Fabric and Abstraction Motor designed for pipeline orchestration and active governance in OCI environments.
+            
+🧠 METADATA-DRIVEN ARCHITECTURE:
+• Dynamic Ingestion: Automated data contracts and ingestion routes by reading metadata from Oracle, MySQL, and API sources.
+• MySQL 8 (JSON): Strategic use of JSON fields for NoSQL flexibility with SQL consistency, allowing schema evolution without downtime.
 
 📊 MODULES & FEATURES:
-• Automated Pipelines: Task orchestration for database replication and robot-based ingestion (Push/Pull).
-• Data Audit: Immutable event logging and critical failure tracking, ensuring full traceability (Audit Logs).
-• Governance: Granular access control (RBAC) and structured environment settings management.`,
+• Push/Pull Pipelines: Asynchronous orchestration with Ingestion Robots that optimize capture based on data criticality.
+• Audit Logs & Imutabilidade: Full traceability and clear data lineage for compliance.
+• Governance & RBAC: Granular control integrated into environment configuration centers (Dev/HML/Prod).`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "OCI", "Docker", "OData v4"],
@@ -168,7 +180,7 @@ const projectsData = {
             title: "POS & Inventory Control",
             category: "FULL STACK / DATABASE",
             desc: `Point of Sale system focused on data integrity and enterprise-grade security.
-
+            
 🔐 SECURITY & DATA:
 • Scalable Modeling: Schema design using Prisma ORM following strict normalization standards.
 • Search Performance: Indexing strategies on frequent search fields in PostgreSQL to optimize complex filters.
@@ -187,7 +199,7 @@ const images = {
     "3": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop",
     "4": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop",
     "5": "/monitor_relatorios.png",
-    "6": "/bytedata_dashboard.png",
+    "6": "/bytedata_login.png",
     "7": "/pdv.png"
 };
 
@@ -196,8 +208,28 @@ const ProjectDetails = () => {
     const { language } = useLanguage();
     const t = translations[language].projectDetails;
     const project = projectsData[language][id];
+    
+    const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+
+    const projectImages = {
+        '6': [
+            "/Gemini_Generated_Image_m3mlltm3mlltm3ml.png",
+            "/bytedata_login.png",
+            "/bytedata_dashboard.png"
+        ]
+    };
 
     if (!project) return <div className="container" style={{ padding: '20rem 0' }}>{t.notFound}</div>;
+
+    const currentImages = projectImages[id] || [images[id]];
+
+    const nextImage = () => {
+        setCurrentImageIndex((prev) => (prev + 1) % currentImages.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prev) => (prev - 1 + currentImages.length) % currentImages.length);
+    };
 
     return (
         <div className="project-details">
@@ -211,20 +243,34 @@ const ProjectDetails = () => {
                     <h1 className="project-title">{project.title}</h1>
                 </header>
 
-                <div className="project-main-image">
-                    <img src={images[id]} alt={project.title} />
+                <div className="project-main-image carousel-container">
+                    <img src={currentImages[currentImageIndex]} alt={project.title} />
+                    
+                    {currentImages.length > 1 && (
+                        <>
+                            <button className="carousel-btn prev" onClick={prevImage}>
+                                <ChevronLeft size={24} />
+                            </button>
+                            <button className="carousel-btn next" onClick={nextImage}>
+                                <ChevronRight size={24} />
+                            </button>
+                            <div className="carousel-dots">
+                                {currentImages.map((_, idx) => (
+                                    <span 
+                                        key={idx} 
+                                        className={`dot ${idx === currentImageIndex ? 'active' : ''}`}
+                                        onClick={() => setCurrentImageIndex(idx)}
+                                    />
+                                ))}
+                            </div>
+                        </>
+                    )}
                 </div>
-
-                {id === '6' && (
-                    <div className="project-secondary-image" style={{ marginTop: '2rem' }}>
-                        <img src="/bytedata_login.png" alt="ByteData Login" style={{ width: '100%', borderRadius: '12px' }} />
-                    </div>
-                )}
 
                 <div className="project-info-grid">
                     <div className="project-description">
                         <h3>{t.overview}</h3>
-                        <p>{project.desc}</p>
+                        <p style={{ whiteSpace: 'pre-line' }}>{project.desc}</p>
 
                         {project.stack && (
                             <div className="project-stack">
