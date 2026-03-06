@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content">
                     <h1 className="hero-title fade-in">
-                        {t.title1} <br />
+                        {t.title1}
                         <span>{t.title2}</span>
                     </h1>
                     <p className="hero-description fade-in" style={{ animationDelay: '0.2s' }}>

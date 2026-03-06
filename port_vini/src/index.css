@@ -233,7 +233,7 @@ h4 {
 
 .hero-title {
   font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 1.1;
+  line-height: 1;
   margin-bottom: 3rem;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -244,8 +244,8 @@ h4 {
   font-style: italic;
   font-weight: 400;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
-  margin-top: 0.5rem;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  margin-top: 0.25rem;
 }
 
 .hero-description {

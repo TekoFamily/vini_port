@@ -7,8 +7,8 @@ export const translations = {
             contact: "CONTATO"
         },
         hero: {
-            title1: "DATABASE ENGINEER |",
-            title2: "PL/SQL | CLOUD & DEVOPS",
+            title1: "DATABASE ENGINEER",
+            title2: "| PL/SQL | CLOUD & DEVOPS",
             subtitle: "Database Engineer especializado em Oracle PL/SQL, performance tuning e arquitetura de dados em Oracle Cloud Infrastructure (OCI). Experiência com PostgreSQL, MySQL, MongoDB, Docker e automação de infraestrutura.",
             remote: "Disponível para oportunidades remotas globais"
         },
@@ -77,8 +77,8 @@ export const translations = {
             contact: "CONTACT"
         },
         hero: {
-            title1: "DATABASE ENGINEER |",
-            title2: "PL/SQL | CLOUD & DEVOPS",
+            title1: "DATABASE ENGINEER",
+            title2: "| PL/SQL | CLOUD & DEVOPS",
             subtitle: "Database Engineer specialized in Oracle PL/SQL, performance tuning, and data architecture in Oracle Cloud Infrastructure (OCI). Experienced with PostgreSQL, MySQL, MongoDB, Docker, and infrastructure automation.",
             remote: "Open to international and remote global opportunities"
         },
