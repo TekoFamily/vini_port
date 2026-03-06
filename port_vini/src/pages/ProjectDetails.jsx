@@ -49,22 +49,21 @@ const projectsData = {
             link: "https://github.com/ViniScooper/monitor_relatorios"
         },
         6: {
-            title: "ByteDataEngine - Metadata-Driven Lakehouse (V2.1)",
+            title: "ByteDataEngine - Data Lakehouse (V2.2)",
             category: "DATA ENGINEERING / ARCHITECTURE",
-            desc: `Plataforma "Metadata-Driven" projetada como um Data Lakehouse simplificado para eliminar o retrabalho no desenvolvimento de BI.
+            desc: `Plataforma "Metadata-Driven" projetada para centralização, automação e visualização de inteligência de negócios.
 
-🎯 CONCEITO & DIFERENCIAL:
-• NoSQL sobre SQL: Utiliza funções nativas de JSON do MySQL 8 para suportar esquemas flexíveis (dados_json) dentro de um banco relacional robusto.
-• Auto-Schema UI: O frontend React identifica alterações no banco via "SHOW COLUMNS" e gera interfaces de dashboard dinamicamente, sem necessidade de novo código.
+📊 MÓDULOS & FUNCIONALIDADES:
+• Dashboard: Visão 360º com Health Score do sistema (RAM/CPU), contagem de pipelines ativos e KPIs de qualidade de dados em tempo real.
+• Datasets (Engenharia de Dados): Gestão simplificada de bases no MySQL 8.0 com suporte a esquemas flexíveis (NoSQL over SQL) e Auto-Schema UI.
+• Integrações: Conectores Universais para qualquer API JSON, com mapeamento inteligente via Fuzzy Matching e proteção ativa contra SSRF.
+• Pipelines: Orquestração de tarefas assíncronas (APScheduler) para replicação de bancos, ingestão via Robôs (Push/Pull) e Bulk Inserts otimizados com Pandas.
+• Auditoria: Registro imutável de eventos (audit_logs), logins e falhas críticas, garantindo rastreabilidade total.
+• Governança (Usuários/Configs): Controle de acesso granular (RBAC) para Admin, Editor e Viewer, além de central de configurações de ambiente.
 
-🔄 PIPELINE DE DADOS:
-• SmartImporter (Ingestão): Motor com Fuzzy Matching (>80% similaridade), detecção automática de encoding e sanitização Strict (normalização de moedas/datas).
-• Universal Connectors: Consumo de qualquer URL JSON com proteção Anti-SSRF e mapeamento automático para tabelas brutas (tb_raw_*).
-• Visualização Dinâmica: Dashboards inteligentes que sugerem eixos X/Y baseados na tipagem dos dados e suporte a Time Series.
-
-🌐 ECOSSISTEMA & SAÍDA:
-• Hub de Integração: Endpoint OData v4 nativo para consumo direto no Power BI e geração de templates de importação dinâmicos.
-• Governança: Trilhas de auditoria imutáveis (audit_logs) e RBAC granular por dataset.`,
+🚀 DIFERENCIAL TÉCNICO:
+• SmartImporter: Motor que limpa e normaliza planilhas e arquivos brutos automaticamente, devolvendo logs de erro em caso de dados sujos.
+• Power BI Native: Fornece feed OData v4 autêntico para consumo direto sem necessidade de conectores externos.`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "Pandas", "Docker", "OData v4", "Fuzzy Search"],
@@ -132,22 +131,21 @@ const projectsData = {
             link: "https://github.com/ViniScooper/monitor_relatorios"
         },
         6: {
-            title: "ByteDataEngine - Metadata-Driven Lakehouse (V2.1)",
+            title: "ByteDataEngine - Data Lakehouse (V2.2)",
             category: "DATA ENGINEERING / ARCHITECTURE",
-            desc: `A "Metadata-Driven" platform designed as a simplified Data Lakehouse to eliminate rework in BI development.
+            desc: `A "Metadata-Driven" platform designed for centralization, automation, and visualization of business intelligence.
 
-🎯 CONCEPT & DIFFERENTIATOR:
-• NoSQL over SQL: Leverages native MySQL 8 JSON functions to support flexible schemas (json_data) within a robust relational database.
-• Auto-Schema UI: The React frontend identifies database changes via "SHOW COLUMNS" and generates dashboard interfaces dynamically, with no new code required.
+📊 MODULES & FEATURES:
+• Dashboard: 360º view with system Health Score (RAM/CPU), active pipeline counts, and real-time data quality KPIs.
+• Datasets (Data Engineering): Simplified management of MySQL 8.0 bases with support for flexible schemas (NoSQL over SQL) and Auto-Schema UI.
+• Integrations: Universal Connectors for any JSON API, with intelligent mapping via Fuzzy Matching and active SSRF protection.
+• Pipelines: Orchestration of asynchronous tasks (APScheduler) for database replication, Robot ingestion (Push/Pull), and optimized Bulk Inserts with Pandas.
+• Audit: Immutable event logging (audit_logs), logins, and critical failures, ensuring full traceability.
+• Governance (Users/Configs): Granular access control (RBAC) for Admin, Editor, and Viewer, plus environment settings management.
 
-🔄 DATA PIPELINE:
-• SmartImporter (Ingestion): Engine with Fuzzy Matching (>80% similarity), automatic encoding detection, and Strict sanitization (currency/date normalization).
-• Universal Connectors: Consumes any JSON URL with Anti-SSRF protection and automatic mapping to raw tables (tb_raw_*).
-• Dynamic Visualization: Intelligent dashboards that suggest X/Y axes based on data typing and Time Series support.
-
-🌐 ECOSYSTEM & OUTPUT:
-• Integration Hub: Native OData v4 endpoint for direct consumption in Power BI and dynamic import template generation.
-• Governance: Immutable audit trails (audit_logs) and granular RBAC per dataset.`,
+🚀 TECHNICAL EDGE:
+• SmartImporter: Engine that automatically cleans and normalizes spreadsheets and raw files, providing error logs for dirty data.
+• Power BI Native: Provides an authentic OData v4 feed for direct consumption without the need for external connectors.`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "Pandas", "Docker", "OData v4", "Fuzzy Search"],
