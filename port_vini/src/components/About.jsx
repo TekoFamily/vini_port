@@ -13,6 +13,9 @@ const About = () => {
                 <div className="about-grid">
                     <div className="about-title-wrapper">
                         <h2 className="section-title">{navT.about}</h2>
+                        <div className="about-image-container fade-in" style={{ animationDelay: '0.3s' }}>
+                            <img src="/perfil.jpeg" alt="Vini" className="about-profile-img" />
+                        </div>
                     </div>
                     <div className="about-content">
                         <p className="large-text">

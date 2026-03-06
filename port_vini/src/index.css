@@ -355,9 +355,34 @@ h4 {
   color: var(--text-secondary);
 }
 
+.about-image-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.about-profile-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: var(--transition);
+}
+
+.about-image-container:hover .about-profile-img {
+  filter: grayscale(0%);
+  transform: translateY(-10px);
+}
+
 @media (max-width: 968px) {
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-image-container {
+    max-width: 100%;
+    margin-bottom: 3rem;
   }
 
   .large-text {
