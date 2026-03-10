@@ -20,13 +20,14 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 
 const defaultWorks = [
+    { id: 7, title: "PDV Byte System", category: "FULL STACK / AZURE", image: "/Gemini_Generated_Image_uuie5duuie5duuie.png" },
+    { id: 6, title: "ByteDataEngine Lakehouse", category: "DATA ENGINEERING / OCI", image: "/bytedata_dashboard.png" },
     { id: 1, title: "Query Performance Lab", category: "DBA / ORACLE", image: "/Gemini_Generated_Image_tx135ptx135ptx13.png" },
+    { id: 8, title: "Sistema de Gestão Acadêmica", category: "FULL STACK / MERN", image: "/ETE4444.png" },
     { id: 2, title: "Scalable Microservices", category: "BACKEND / DATABASE", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" },
     { id: 3, title: "Financial DB Migration", category: "DATABASE ENGINEER", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
     { id: 4, title: "Database Monitoring Tool", category: "DBA / AUTOMATION", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop" },
     { id: 5, title: "Oracle PL-SQL Report Monitor", category: "BACKEND / ORACLE PL-SQL", image: "/monitor_relatorios.png" },
-    { id: 6, title: "ByteDataEngine Lakehouse", category: "DATA ENGINEERING / OCI", image: "/bytedata_dashboard.png" },
-    { id: 7, title: "PDV Byte System", category: "FULL STACK / AZURE", image: "/Gemini_Generated_Image_uuie5duuie5duuie.png" },
 ];
 
 const SortableProjectCard = ({ work }) => {
@@ -65,7 +66,7 @@ const Works = () => {
     const t = translations[language].works;
 
     const [projectList, setProjectList] = useState(() => {
-        const savedOrder = localStorage.getItem('portfolio_works_order');
+        const savedOrder = localStorage.getItem('portfolio_works_order_v3');
         if (savedOrder) {
             try {
                 const parsedIds = JSON.parse(savedOrder);
@@ -105,7 +106,7 @@ const Works = () => {
                 const newIndex = items.findIndex(item => item.id === over.id);
 
                 const newOrder = arrayMove(items, oldIndex, newIndex);
-                localStorage.setItem('portfolio_works_order', JSON.stringify(newOrder.map(item => item.id)));
+                localStorage.setItem('portfolio_works_order_v3', JSON.stringify(newOrder.map(item => item.id)));
                 return newOrder;
             });
         }

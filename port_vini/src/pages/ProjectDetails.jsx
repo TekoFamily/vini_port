@@ -107,6 +107,26 @@ const projectsData = {
             stack: ["React 18", "Node.js (Express)", "Azure SQL", "JWT / RBAC", "Vite", "mssql"],
             link: "https://github.com/ViniScooper/pdv_byte"
         },
+        8: {
+            title: "Sistema de Gestão Acadêmica",
+            category: "FULL STACK / MERN",
+            desc: `Sistema de Gestão Acadêmica focado em acompanhamento de projetos e avaliações. Este projeto foi desenvolvido e apresentado para uma Escola Técnica de Design de Interiores, visando facilitar o uso por professores e alunos no dia a dia acadêmico.
+
+🚀 PRINCIPAIS FUNCIONALIDADES:
+• Visão do Aluno: Criação de escopo (Briefing), submissão de entregas, interação via Feedbacks (fórum/chat) e solicitação de revisão.
+• Visão do Professor: Painel administrativo de projetos, avaliação com Checklist de requisitos e ditar a Nota Final.
+• Ciclo de Vida: Funil de status (Briefing, Prototype, Review, Finalization).
+• Notificações & Proteção: Alertas visuais e proteção de rotas via JWT, garantindo total privacidade entre alunos.
+
+🛠️ TECNOLOGIAS E ARQUITETURA:
+• Frontend (React 19 + Vite): Single Page Application (SPA), React Router DOM v7, Context API e CSS puro com lucide-react.
+• Backend (Node.js + Express): API RESTful autônoma desacoplada do frontend.
+• Banco de Dados (MongoDB + Prisma ORM): Integração NoSQL escalável com integridade referencial nativa (@db.ObjectId).
+• Segurança: JWT e Bcrypt.js nas rotas protegidas.`,
+            year: "2026",
+            client: "Instituições de Ensino",
+            stack: ["React 19", "Node.js (Express)", "MongoDB", "Prisma ORM", "JWT", "Vite"]
+        },
     },
     en: {
         1: {
@@ -206,6 +226,26 @@ const projectsData = {
             stack: ["React", "Express", "Azure SQL", "JWT / RBAC", "Vite", "mssql"],
             link: "https://github.com/ViniScooper/pdv_byte"
         },
+        8: {
+            title: "Academic Management System",
+            category: "FULL STACK / MERN",
+            desc: `Academic Management System focused on project tracking and evaluations. This project was developed and presented for an Interior Design Technical School, ensuring easy daily use for both students and teachers.
+
+🚀 CORE FEATURES:
+• Student View: Scope creation (Briefing), assignment submissions, continuous interaction via Feedbacks (chat/forum), and review requests.
+• Teacher View: Administrative dashboard for pending projects, dynamic evaluation with Checklists, and Final Grade assignment.
+• Project Lifecycle: Status funnel (Briefing, Prototype, Review, Finalization).
+• Notifications & Security: Visual alerts and route protection via JWT, ensuring complete privacy among students.
+
+🛠️ TECHNOLOGIES & ARCHITECTURE:
+• Frontend (React 19 + Vite): Single Page Application (SPA), React Router DOM v7, Context API, and pure CSS with lucide-react.
+• Backend (Node.js + Express): Autonomous RESTful API decoupled from the frontend.
+• Database (MongoDB + Prisma ORM): Scalable NoSQL integration with native referential integrity (@db.ObjectId).
+• Security: JWT and Bcrypt.js on protected routes.`,
+            year: "2026",
+            client: "Educational Institutions",
+            stack: ["React 19", "Node.js (Express)", "MongoDB", "Prisma ORM", "JWT", "Vite"]
+        },
     }
 };
 
@@ -216,7 +256,8 @@ const images = {
     "4": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2340&auto=format&fit=crop",
     "5": "/monitor_relatorios.png",
     "6": "/bytedata_login.png",
-    "7": "/pdv.png"
+    "7": "/pdv.png",
+    "8": "/ETE4444.png"
 };
 
 const ProjectDetails = () => {
@@ -237,6 +278,13 @@ const ProjectDetails = () => {
             "/Gemini_Generated_Image_uuie5duuie5duuie.png",
             "/Captura de tela 2026-03-09 175238.png",
             "/Captura de tela 2026-03-09 175307.png"
+        ],
+        '8': [
+            "/ETE4444.png",
+            "/ETE8888.png",
+            "/ETE560040040.jpeg",
+            "/ETE34349.jpeg",
+            "/ETE66666.png"
         ]
     };
 
