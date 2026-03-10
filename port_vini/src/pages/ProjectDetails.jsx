@@ -86,17 +86,25 @@ const projectsData = {
             link: "https://github.com/ViniScooper/bytedata-order-api"
         },
         7: {
-            title: "PDV & Inventory Control",
-            category: "FULL STACK / DATABASE",
-            desc: `Sistema de Ponto de Venda focado em integridade de dados e segurança de nível empresarial.
-            
-🔐 SEGURANÇA & DADOS:
-• Modelagem Escalável: Desenho de esquema utilizando Prisma ORM seguindo padrões rigorosos de normalização.
-• Performance de Busca: Estratégias de indexação em campos de busca frequente no PostgreSQL para otimizar filtros complexos.
-• Proteção JWT/RBAC: Controle granular de acesso para operações críticas no banco de dados.`,
+            title: "PDV Byte - Sistema Completo",
+            category: "FULL STACK / AZURE DB",
+            desc: `O PDV Byte é um sistema moderno de gestão e frente de caixa para cantinas e lanchonetes, construído com tecnologias robustas e de alta performance.
+
+🛠️ TECNOLOGIAS E ARQUITETURA:
+• Frontend (React.js + Vite): Interface ultra-rápida utilizando Context API (Optimistic Updates) e design clean com lucide-react.
+• Backend (Node.js + Express): Cérebro rodando regras complexas, processos financeiros e baixas de estoque via REST API protegida.
+• Banco de Dados (Azure SQL): Estabilidade ACID na infraestrutura da Microsoft conectada via driver mssql nativo, sem as limitações de performance comuns a ORMs (Zero Prisma).
+• Segurança e Perfis: Controle severo de rotas com JWT (12h expiration) e bcrypt para roles de ADMIN (Tudo) e CAIXA (Operações).
+
+📊 FLUXOS & FUNCIONALIDADES:
+• 1. Gestão de Turnos (Fluxo Financeiro): Operações travadas com "Caixa Fechado". Requer "Saldo Inicial" de Dinheiro informando exatamente as quebras, sobras e auditoria no fechar de caixa.
+• 2. Ponto de Venda (PDV ágil): Adições rápidas ao carrinho, modificação de opcionais (Ex: "Turbinado"), seleção de pagamento na via Cozinha x Via Cliente em impressora.
+• 3. Pagamentos / Despesas: Retiradas e pagamentos do mês (ex: Compras). Permite "Anexar NF" e "Alimentar Estoque" automaticamente na hora da despesa.
+• 4. Fichas Técnicas & Estoques: Configuração complexa de insumos. Uma venda abate fracionadamente o que o cliente comprou ("-80g Carne", "-1 Pão") e calcula custo total.
+• 5. Dashboard Gerencial: Onde se bate o martelo em Faturamento Diário, Lucro Líquido Real, e análise financeira profunda dos turnos.`,
             year: "2026",
-            client: "Pequenos Comércios",
-            stack: ["NestJS", "Prisma", "PostgreSQL", "JWT / RBAC", "React", "Docker"],
+            client: "Lanchonetes e Cantinas",
+            stack: ["React 18", "Node.js (Express)", "Azure SQL", "JWT / RBAC", "Vite", "mssql"],
             link: "https://github.com/ViniScooper/pdv_byte"
         },
     },
@@ -177,17 +185,25 @@ const projectsData = {
             link: "https://github.com/ViniScooper/bytedata-order-api"
         },
         7: {
-            title: "POS & Inventory Control",
-            category: "FULL STACK / DATABASE",
-            desc: `Point of Sale system focused on data integrity and enterprise-grade security.
-            
-🔐 SECURITY & DATA:
-• Scalable Modeling: Schema design using Prisma ORM following strict normalization standards.
-• Search Performance: Indexing strategies on frequent search fields in PostgreSQL to optimize complex filters.
-• JWT/RBAC Protection: Granular access control for critical database operations.`,
+            title: "PDV Byte - Point of Sale",
+            category: "FULL STACK / AZURE DB",
+            desc: `PDV Byte is a complete Point of Sale (POS) and management system for canteens and snack bars, built with robust and high-performing technologies.
+
+🛠️ TECHNOLOGIES & ARCHITECTURE:
+• Frontend (React.js + Vite): Ultra-fast interface using Context API (Optimistic Updates) and clean design with lucide-react.
+• Backend (Node.js + Express): Brain processing complex rules, financial operations, and stock deductions via secure REST API.
+• Database (Azure SQL): ACID stability on Microsoft infrastructure connected via native mssql driver, bypassing common ORM performance limitations.
+• Security & Profiles: Strict route control using JWT (12h expiration) and bcrypt for ADMIN (All) and CASHIER (Operations) roles.
+
+📊 FLOWS & FEATURES:
+• 1. Shift Management (Financial Flow): Operations are locked when "Shift Closed". Requires setting "Initial Balance" and tracks overages, shortages, and audits upon closing.
+• 2. Agile POS: Fast cart additions, modifiers (e.g., "Extra bacon"), and payment selection with split printing routing (Kitchen vs Customer receipt).
+• 3. Payments & Expenses: Outbound cash flows securely. Allows attaching receipt images and automatically "Feeding Stock" upon expense registration.
+• 4. Complex Recipes & Stock: Advanced ingredient mapping. Selling a meal performs fractional deductions ("-80g Meat", "-1 Bun") and calculates true cost.
+• 5. Managerial Dashboard: Real-time look at Daily Revenue, Real Net Profit, and in-depth financial analysis of past shifts.`,
             year: "2026",
-            client: "Small Businesses",
-            stack: ["NestJS", "Prisma", "PostgreSQL", "JWT / RBAC", "React", "Docker"],
+            client: "Snack Bars",
+            stack: ["React", "Express", "Azure SQL", "JWT / RBAC", "Vite", "mssql"],
             link: "https://github.com/ViniScooper/pdv_byte"
         },
     }
@@ -216,6 +232,11 @@ const ProjectDetails = () => {
             "/Gemini_Generated_Image_m3mlltm3mlltm3ml.png",
             "/bytedata_login.png",
             "/bytedata_dashboard.png"
+        ],
+        '7': [
+            "/Gemini_Generated_Image_uuie5duuie5duuie.png",
+            "/Captura de tela 2026-03-09 175238.png",
+            "/Captura de tela 2026-03-09 175307.png"
         ]
     };
 

@@ -48,7 +48,8 @@ export const translations = {
         },
         works: {
             title: "PROJETOS",
-            details: "DETALHES"
+            details: "DETALHES",
+            dragHint: "💡 Arraste os cards para reorganizar a ordem dos projetos."
         },
         contact: {
             title: "VAMOS CONVERSAR?",
@@ -118,7 +119,8 @@ export const translations = {
         },
         works: {
             title: "PROJECTS",
-            details: "DETAILS"
+            details: "DETAILS",
+            dragHint: "💡 Drag the cards to reorder the projects."
         },
         contact: {
             title: "LET'S TALK?",
