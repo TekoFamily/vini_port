@@ -17,11 +17,6 @@ const Hero = () => {
                     <p className="hero-description fade-in" style={{ animationDelay: '0.2s' }}>
                         {t.subtitle}
                     </p>
-                    {t.remote && (
-                        <p className="hero-remote fade-in" style={{ animationDelay: '0.4s' }}>
-                            {t.remote}
-                        </p>
-                    )}
                 </div>
                 <div className="hero-scroll fade-in" style={{ animationDelay: '0.8s' }}>
                     <div className="scroll-line"></div>

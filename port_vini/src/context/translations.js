@@ -49,7 +49,8 @@ export const translations = {
         works: {
             title: "PROJETOS",
             details: "DETALHES",
-            dragHint: "💡 Arraste os cards para reorganizar a ordem dos projetos."
+            dragHint: "💡 Arraste os cards para reorganizar a ordem dos projetos.",
+            featured: "DESTAQUE"
         },
         contact: {
             title: "VAMOS CONVERSAR?",
@@ -67,6 +68,7 @@ export const translations = {
             year: "ANO",
             client: "CLIENTE",
             viewGithub: "VER NO GITHUB",
+            viewLive: "VER NO SITE",
             notFound: "Projeto não encontrado"
         }
     },
@@ -120,7 +122,8 @@ export const translations = {
         works: {
             title: "PROJECTS",
             details: "DETAILS",
-            dragHint: "💡 Drag the cards to reorder the projects."
+            dragHint: "💡 Drag the cards to reorder the projects.",
+            featured: "FEATURED"
         },
         contact: {
             title: "LET'S TALK?",
@@ -138,6 +141,7 @@ export const translations = {
             year: "YEAR",
             client: "CLIENT",
             viewGithub: "VIEW ON GITHUB",
+            viewLive: "VIEW LIVE SITE",
             notFound: "Project not found"
         }
     }

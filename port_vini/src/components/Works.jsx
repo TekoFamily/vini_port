@@ -20,10 +20,10 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 
 const defaultWorks = [
-    { id: 7, title: "PDV Byte System", category: "FULL STACK / AZURE", image: "/Gemini_Generated_Image_uuie5duuie5duuie.png" },
-    { id: 6, title: "ByteDataEngine Lakehouse", category: "DATA ENGINEERING / OCI", image: "/bytedata_dashboard.png" },
-    { id: 9, title: "Career Management Hub (Job Tracker)", category: "FRONTEND / REACT", image: "/job_tracker1.png" },
-    { id: 8, title: "Sistema de Gestão Acadêmica", category: "FULL STACK / MERN", image: "/ETE4444.png" },
+    { id: 7, title: "PDV Byte System", category: "FULL STACK / AZURE", image: "/Gemini_Generated_Image_uuie5duuie5duuie.png", featured: true },
+    { id: 6, title: "ByteDataEngine Lakehouse", category: "DATA ENGINEERING / OCI", image: "/bytedata_dashboard.png", featured: true },
+    { id: 9, title: "Career Management Hub (Job Tracker)", category: "FRONTEND / REACT", image: "/job_tracker1.png", featured: true },
+    { id: 8, title: "Sistema de Gestão Acadêmica", category: "FULL STACK / MERN", image: "/ETE4444.png", featured: true },
     { id: 1, title: "Query Performance Lab", category: "DBA / ORACLE", image: "/Gemini_Generated_Image_tx135ptx135ptx13.png" },
     { id: 2, title: "Scalable Microservices", category: "BACKEND / DATABASE", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" },
     { id: 3, title: "Financial DB Migration", category: "DATABASE ENGINEER", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&auto=format&fit=crop" },
@@ -46,8 +46,9 @@ const SortableProjectCard = ({ work }) => {
 
     return (
         <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-            <Link to={`/project/${work.id}`} className={`work-item ${isDragging ? 'dragging' : ''}`} draggable={false}>
+            <Link to={`/project/${work.id}`} className={`work-item ${isDragging ? 'dragging' : ''} ${work.featured ? 'work-featured' : ''}`} draggable={false}>
                 <div className="work-image-wrapper">
+                    {work.featured && <span className="featured-badge">{t.featured}</span>}
                     <img src={work.image} alt={work.title} className="work-image" draggable={false} />
                     <div className="work-overlay">
                         <span>{t.details}</span>

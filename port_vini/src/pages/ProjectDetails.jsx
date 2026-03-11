@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Github, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 
@@ -141,10 +141,16 @@ const projectsData = {
 🛠️ TECNOLOGIAS E UI/UX:
 • Frontend: React 19, Vite, React Router DOM, Axios, Lucide React, e CSS puro.
 • Autenticação: Armazenamento e interceptação via tokens JWT associados à API no Render.
-• Experiência Visual: Loading states (Skeleton Screens), Toast Notifications (Sonner) e Visualização de Dados Interativa (Recharts).`,
+• Experiência Visual: Loading states (Skeleton Screens), Toast Notifications (Sonner) e Visualização de Dados Interativa (Recharts).
+
+☁️ INFRAESTRUTURA E DEPLOY (HOSPEDAGEM):
+Para garantir alta disponibilidade e um fluxo de CI/CD moderno, a arquitetura foi dividida em dois serviços independentes (Decoupled Architecture):
+• Frontend (Vercel): A aplicação React/Vite (UI) está hospedada na Vercel (Edge Network) com Continuous Deployment automático a cada Push na branch main. Um \`vercel.json\` garante que as rotas da SPA não resultem em erros 404, servindo unicamente o \`index.html\`.
+• Backend (Render): A API REST principal (Node.js/Express) que abriga lógica de negócio e queries autenticadas via Prisma ORM opera sob a plataforma em nuvem do Render. Separar o front-end na Vercel e o back-end em PaaS como o Render demonstra o domínio de boas práticas corporativas de microsserviços.`,
             year: "2026",
             client: "Projeto Pessoal",
-            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide"]
+            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide", "Vercel", "Render"],
+            liveLink: "https://job-tracker-lac-five.vercel.app/login"
         },
     },
     en: {
@@ -279,10 +285,16 @@ const projectsData = {
 🛠️ TECHNOLOGIES & UI/UX:
 • Frontend: React 19, Vite, React Router DOM, Axios, Lucide React, and Custom CSS.
 • Authentication: JWT token interceptors validating state against a custom Render API.
-• User Experience: Loading states (Skeleton Screens), Toast Notifications (Sonner) and Interactive Data Viz (Recharts).`,
+• User Experience: Loading states (Skeleton Screens), Toast Notifications (Sonner) and Interactive Data Viz (Recharts).
+
+☁️ INFRASTRUCTURE AND DEPLOYMENT (HOSTING):
+To ensure high availability and modern CI/CD flow, the architecture uses Decoupled independent services:
+• Frontend (Vercel): The visual React/Vite layer lives on Vercel's global Edge Network featuring automatic Continuous Deployment hooked to GitHub \`main\` branch pushes. A customized \`vercel.json\` bypasses SPA 404 Routing errors.
+• Backend (Render): A dedicated Node.js/Express RESTful API routing, authenticating and querying data via Prisma ORM operates on the Render Cloud. Choosing explicit physical separation of services (Vercel + Render) mirrors strict corporate IT decoupling best practices.`,
             year: "2026",
             client: "Personal Project",
-            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide"]
+            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide", "Vercel", "Render"],
+            liveLink: "https://job-tracker-lac-five.vercel.app/login"
         },
     }
 };
@@ -396,11 +408,19 @@ const ProjectDetails = () => {
                             </div>
                         )}
 
-                        {project.link && (
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-btn">
-                                <Github size={18} /> {t.viewGithub}
-                            </a>
-                        )}
+                        <div className="project-links" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
+                            {project.link && (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-btn">
+                                    <Github size={18} /> {t.viewGithub}
+                                </a>
+                            )}
+                            
+                            {project.liveLink && (
+                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link-btn">
+                                    <ExternalLink size={18} /> {t.viewLive}
+                                </a>
+                            )}
+                        </div>
                     </div>
                     <div className="project-meta">
                         <div className="meta-item">
