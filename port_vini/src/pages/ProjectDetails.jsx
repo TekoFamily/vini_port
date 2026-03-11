@@ -127,6 +127,25 @@ const projectsData = {
             client: "Instituições de Ensino",
             stack: ["React 19", "Node.js (Express)", "MongoDB", "Prisma ORM", "JWT", "Vite"]
         },
+        9: {
+            title: "Hub de Gerenciamento de Carreira (Job Tracker)",
+            category: "FRONTEND / REACT",
+            desc: `O Job Tracker é uma aplicação Single Page Application (SPA) projetada para ajudar profissionais a gerenciar suas candidaturas a vagas de emprego, visualizar recomendações de vagas e analisar dinamicamente o nível de compatibilidade de seus currículos.
+
+🚀 PRINCIPAIS FUNCIONALIDADES:
+• Integração Externa (APIs): Busca em paralelo de vagas remotas pelo Remotive e Arbeitnow, normalizando os dados em tempo real.
+• Match Dinâmico de Currículo: Algoritmo que compara Habilidades Requisitadas, Senioridade e Cargo, gerando uma porcentagem de aderência (+ Skills Gaps).
+• Kanban Interativo: Gestão visual de candidaturas com Drag-and-Drop.
+• Exportação para IA: Transforme o currículo em JSON e faça refinamentos focados com IA (ChatGPT/Claude), otimizando-o contra sistemas ATS em segundos.
+
+🛠️ TECNOLOGIAS E UI/UX:
+• Frontend: React 19, Vite, React Router DOM, Axios, Lucide React, e CSS puro.
+• Autenticação: Armazenamento e interceptação via tokens JWT associados à API no Render.
+• Experiência Visual: Loading states (Skeleton Screens), Toast Notifications (Sonner) e Visualização de Dados Interativa (Recharts).`,
+            year: "2026",
+            client: "Projeto Pessoal",
+            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide"]
+        },
     },
     en: {
         1: {
@@ -246,6 +265,25 @@ const projectsData = {
             client: "Educational Institutions",
             stack: ["React 19", "Node.js (Express)", "MongoDB", "Prisma ORM", "JWT", "Vite"]
         },
+        9: {
+            title: "Career Management Hub (Job Tracker)",
+            category: "FRONTEND / REACT",
+            desc: `Job Tracker is a SPA application designed to help professionals manage job applications, visualize job recommendations, and dynamically analyze their resume compatibility.
+
+🚀 CORE FEATURES:
+• External APIs Integration: Parallel fetch of remote jobs via Remotive and Arbeitnow with real-time data normalization.
+• Dynamic Resume Matching: Algorithm comparing Requested Skills, Seniority, and Title match, resulting in an adherence score (+ Skills Gaps).
+• Interactive Kanban: Visual drag-and-drop board to manage job application statuses.
+• AI Export Ready: Turn the resume into JSON format for focused AI (ChatGPT/Claude) enhancements, optimizing it for ATS systems in seconds.
+
+🛠️ TECHNOLOGIES & UI/UX:
+• Frontend: React 19, Vite, React Router DOM, Axios, Lucide React, and Custom CSS.
+• Authentication: JWT token interceptors validating state against a custom Render API.
+• User Experience: Loading states (Skeleton Screens), Toast Notifications (Sonner) and Interactive Data Viz (Recharts).`,
+            year: "2026",
+            client: "Personal Project",
+            stack: ["React 19", "Vite", "Axios", "Recharts", "dnd-kit", "Lucide"]
+        },
     }
 };
 
@@ -257,7 +295,8 @@ const images = {
     "5": "/monitor_relatorios.png",
     "6": "/bytedata_login.png",
     "7": "/pdv.png",
-    "8": "/ETE4444.png"
+    "8": "/ETE4444.png",
+    "9": "/job_tracker1.png"
 };
 
 const ProjectDetails = () => {
@@ -285,6 +324,14 @@ const ProjectDetails = () => {
             "/ETE560040040.jpeg",
             "/ETE34349.jpeg",
             "/ETE66666.png"
+        ],
+        '9': [
+            "/job_tracker1.png",
+            "/tracker02.png",
+            "/tracker002.png",
+            "/tracker.....png",
+            "/Captura de tela 2026-03-10 213010.png",
+            "/Captura de tela 2026-03-10 213041.png"
         ]
     };
 
