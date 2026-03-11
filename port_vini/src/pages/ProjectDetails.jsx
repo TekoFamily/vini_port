@@ -66,20 +66,45 @@ const projectsData = {
         6: {
             title: "ByteDataEngine Lakehouse",
             category: "DATA ENGINEERING / OCI",
-            desc: `O ByteData é um Motor de Abstração de Dados (Data Fabric) projetado para orquestração de pipelines e governança ativa em ambientes OCI.
-            
-🧠 ARQUITETURA METADATA-DRIVEN:
-• Ingestão Dinâmica: O sistema automatiza contratos de dados e rotas de ingestão lendo metadados de fontes Oracle, MySQL e APIs.
-• MySQL 8 (JSON): Uso estratégico de campos JSON para flexibilidade NoSQL com consistência SQL, permitindo evoluções de esquema sem downtime.
+            desc: `O ByteData é um Motor de Abstração de Dados (Data Fabric) projetado para orquestração de pipelines e governança ativa em ambientes OCI. A plataforma foi construída com uma arquitetura metadata-driven, onde o sistema se adapta automaticamente à estrutura dos dados — eliminando trabalho manual de configuração.
 
-📊 MÓDULOS & FUNCIONALIDADES:
-• Pipelines Push/Pull: Orquestração assíncrona com Robôs de Ingestão que otimizam a captura baseada na criticidade do dado.
-• Audit Logs & Imutabilidade: Rastreabilidade total e linhagem de dados clara para conformidade (compliance).
-• Governança & RBAC: Controle granular integrado a centrais de configuração (Dev/HML/Prod).
+📊 DASHBOARD
+• Visualização Automática: Gráficos e tabelas gerados em tempo real com base no esquema das Views SQL.
+• Sugestões Inteligentes: O sistema infere automaticamente eixos X (categorias) e Y (valores/métricas).
+• Análise Temporal (Time Series): Pivotamento de dados para evolução de séries numéricas.
+• Flexibilidade: Dados relacionais e NoSQL (JSON) renderizados de forma unificada.
 
-🛠️ STACK & ESTRATÉGIA:
-• OData v4: Padronização de APIs para consumo nativo em ferramentas de BI (PowerBI, Tableau).
-• OCI & Docker: Escalabilidade elástica e portabilidade total da infraestrutura.`,
+⚙️ ENGENHARIA DE DADOS
+
+  📁 Datasets
+  • SmartImporter: Interface para upload de CSV/Excel com sanitização automática e fuzzy matching de colunas.
+  • Catálogo de Dados: Listagem de Tabelas Brutas e Views prontas para consumo.
+  • Geração de Templates: Exporta planilhas modelo conforme o esquema atual.
+
+  🔌 Integrações
+  • Universal Connectors: Conectores genéricos para APIs JSON públicas e privadas.
+  • OData v4 / Power BI: Endpoint nativo para consumo autenticado em ferramentas de BI.
+  • API Key: Acesso programático para inserção e resgate de dados por sistemas externos.
+  • Segurança (SSRF): Proteção contra acesso indevido à rede interna.
+
+  🔀 Pipelines
+  • Schedulers: Disparo automatizado e programado de extrações.
+  • Camadas ELT: Gestão do fluxo de tabelas brutas para Views processadas.
+  • Resiliência: Consistência transacional garantida em falhas parciais.
+
+🛡️ GOVERNANÇA
+
+  📝 Auditoria
+  • Audit Logs Imutáveis: Histórico completo de acessos, alterações e exclusões.
+  • Rastreabilidade & LGPD: Busca por quem, quando e o que foi realizado — garantindo compliance.
+
+  👥 Usuários
+  • Controle RBAC: Permissões granulares por função (Role) e grupos de acesso a relatórios.
+  • Gestão de Identidade: Criação e revogação de senhas e chaves sistêmicas.
+
+  🛠️ Configurações
+  • Health Checks: Status em tempo real dos schedulers e da conexão com o banco de dados.
+  • Visão Macro: Parâmetros de customização geral e links da plataforma.`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "OCI", "Docker", "OData v4"],
@@ -214,16 +239,45 @@ Para garantir alta disponibilidade e um fluxo de CI/CD moderno, a arquitetura fo
         6: {
             title: "ByteDataEngine Lakehouse",
             category: "DATA ENGINEERING / OCI",
-            desc: `ByteData is a Data Fabric and Abstraction Motor designed for pipeline orchestration and active governance in OCI environments.
-            
-🧠 METADATA-DRIVEN ARCHITECTURE:
-• Dynamic Ingestion: Automated data contracts and ingestion routes by reading metadata from Oracle, MySQL, and API sources.
-• MySQL 8 (JSON): Strategic use of JSON fields for NoSQL flexibility with SQL consistency, allowing schema evolution without downtime.
+            desc: `ByteData is a Data Fabric & Abstraction Engine designed for pipeline orchestration and active governance in OCI environments. Built on a metadata-driven architecture, the platform self-adapts to data structures — eliminating manual configuration overhead.
 
-📊 MODULES & FEATURES:
-• Push/Pull Pipelines: Asynchronous orchestration with Ingestion Robots that optimize capture based on data criticality.
-• Audit Logs & Imutabilidade: Full traceability and clear data lineage for compliance.
-• Governance & RBAC: Granular control integrated into environment configuration centers (Dev/HML/Prod).`,
+📊 DASHBOARD
+• Automatic Visualization: Charts and tables generated in real time based on SQL View schemas.
+• Intelligent Suggestions: The system automatically infers X (categories) and Y (values/metrics) axes.
+• Time Series Analysis: Easy data pivoting to display numeric series evolution.
+• Flexibility: Relational and NoSQL (JSON) data rendered in a unified interface.
+
+⚙️ DATA ENGINEERING
+
+  📁 Datasets
+  • SmartImporter: Upload interface for CSV/Excel with automatic sanitization and fuzzy column matching.
+  • Data Catalog: Listing of Raw Tables and Views ready for consumption.
+  • Template Generation: Exports blank spreadsheet templates based on the current schema.
+
+  🔌 Integrations
+  • Universal Connectors: Generic connectors for public and private JSON APIs.
+  • OData v4 / Power BI: Native endpoint for authenticated consumption in BI tools.
+  • API Key: Programmatic access for external systems to insert or retrieve data.
+  • Security (SSRF): Protection against unauthorized access to the internal network.
+
+  🔀 Pipelines
+  • Schedulers: Automated and scheduled extraction triggers.
+  • ELT Layers: Manages flow from raw tables to processed Views.
+  • Resilience: Transactional consistency guaranteed even on partial failures.
+
+🛡️ GOVERNANCE
+
+  📝 Audit
+  • Immutable Audit Logs: Complete history of accesses, changes, and deletions.
+  • Traceability & Compliance: Search by who, when, and what was done — ensuring LGPD compliance.
+
+  👥 Users
+  • RBAC Control: Granular permissions by role and access groups for reports and resources.
+  • Identity Management: Creation and revocation of passwords and system keys.
+
+  🛠️ Settings
+  • Health Checks: Real-time status of schedulers and database connectivity.
+  • Macro View: General customization parameters and platform links.`,
             year: "2026",
             client: "ByteData Inc.",
             stack: ["Python (Flask)", "React 18", "MySQL 8 (JSON)", "OCI", "Docker", "OData v4"],
@@ -323,7 +377,14 @@ const ProjectDetails = () => {
         '6': [
             "/Gemini_Generated_Image_m3mlltm3mlltm3ml.png",
             "/bytedata_login.png",
-            "/bytedata_dashboard.png"
+            "/bytedata_dashboard.png",
+            "/DATA.png",
+            "/DATA4.png",
+            "/DATA23321.png",
+            "/DATA2321321.png",
+            "/DATAA2321.png",
+            "/DSAD3224239.png",
+            "/GRADIFCOSA.png"
         ],
         '7': [
             "/Gemini_Generated_Image_uuie5duuie5duuie.png",

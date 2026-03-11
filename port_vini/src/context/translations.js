@@ -16,7 +16,7 @@ export const translations = {
             title: "ESTRATEGISTA DE DADOS & CLOUD ENGINEER",
             description: "Especialista em bancos de dados e otimização de performance, com forte experiência em Oracle PL/SQL, SQL Server, PostgreSQL e MySQL. Trabalho com ambientes críticos na Oracle Cloud Infrastructure (OCI) garantindo alta disponibilidade, performance e escalabilidade através de Docker, automação e CI/CD. Minha atuação combina engenharia de dados, backend e DevOps para construir sistemas resilientes e eficientes. Aberto a projetos e desafios internacionais.",
             stats: [
-                { label: "ANOS COM TECNOLOGIA & DADOS", value: "4+" },
+                { label: "ANOS COM TECNOLOGIA & DADOS", value: "5+" },
                 { label: "BANCOS OTIMIZADOS", value: "50+" },
                 { label: "DISPONIBILIDADE EM PROD", value: "99.9%" }
             ]
